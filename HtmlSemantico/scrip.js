@@ -1,0 +1,46 @@
+function alterarNome() {
+    let trocarNome = document.getElementById("inputNome").value;
+
+    if (trocarNome === "") {
+        alert("Digite um nome!")
+    } else{
+        document.getElementById("nomeUsuario").innerHTML = trocarNome;
+    }
+}
+function alterarCurso(){
+    let trocarCurso = document.getElementById("inputCurso").value;
+    if (trocarCurso === ""){
+        alert("Coloque um curso!")
+    }
+    else {
+        document.getElementById("nomeCurso").innerHTML = trocarCurso
+    }
+}
+function alterarStatus(){
+    let trocarStatus = document.getElementById("inputStatus").value;
+    if(trocarStatus === ""){
+        alert("indique um Status")
+    }
+    else {
+        document.getElementById("nomeStatus").innerHTML = trocarStatus
+    }
+}
+
+function mudarCorHeader(){
+    let cor = document.getElementById("corHeader").value;
+    document.querySelector (".cabecalho").style.backgroundColor = cor
+}
+function mudarCorNav(){
+    let cor = document.getElementById("corNav").value;
+    document.querySelector (".navegacao").style.backgroundColor = cor
+}
+function mudarCorSec(){
+    let cor = document.getElementById("corSection").value
+    document.querySelector (".secao").style.backgroundColor = cor
+}
+function mudarFooter(){
+    let cor = document.getElementById("corFooter").value
+    document.querySelector (".rodape").style.backgroundColor = cor
+}
+
+
